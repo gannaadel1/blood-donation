@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  display: flex;
+  margin: 50px;
+  max-width: 1000px;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+  justify-content: space-between;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 700px 900px;
+  border-radius: 10px;
+  height: 400px;
+  /* Edited by Ezz - overflow hidden property deleted so the form can be more felxable  */
+  min-height: 500px; /*  Edited by Ezz - don't give a fixed height  */
+}
+
+form {
+  border: none;
+  /* Edited by Ezz - margin left deleted to make the form responsive  */
+  height: 100%;  /* Edited by Ezz - give 100% height so the form expands */
+}
+form #fname {
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid rgb(177, 167, 167);
+  margin: 20px;
+}
+#email {
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid rgb(177, 167, 167);
+  margin: 20px;
+}
+#message {
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid rgb(177, 167, 167);
+  margin: 20px;
+}
+#phone {
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid rgb(177, 167, 167);
+  margin: 20px;
+}
+
+#signup {
+  background-color: rgb(133, 34, 34);
+  color: white;
+  border-radius: 5rem;
+  width: 100px;
+  float: right;
+  margin-right: 20px;
+  border: none;
+  transition: 0.7s;
+  animation: ease-in;
+  padding: 5px 10px;;
+}
+#signup:hover{
+  background-color: white;
+  color: black;
+border-color: black;
+border: solid;
+
+}
+.card-title {
+  font-size: 60px;
+   /* Edited by Ezz - margin left deleted to make the title responsive  */
+  text-align: center; /* Edited by Ezz - added to centralize the title */
+}
+
+img {
+  margin-top: -220;
+}
+.cont2 {
+  font-size: 50px;
+  /* margin-left: 20%; */
+  float: right;
+  margin-right: 25px;
+}
+.navbar-nav {
+  gap: 25px !important;
+}
+li {
+  position: relative;
+  display: inline-block;
+}
+a {
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
+a::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  left: 30%;
+  display: block;
+  position: absolute;
+  background-color: rgb(193, 31, 31);
+  transition: width 0.3s, left 0.2s;
+}
+a:hover::after {
+  width: 100%;
+  left: 0%;
+}
+a {
+  font-size: 20px;
+}
+.nav-link {
+  transition: 15ms !important;
+}
+.nav-link:hover {
+  color: rgb(184, 45, 45) !important;
+}
+.navbar-collapse {
+  flex-grow: 0 !important;
+}
+.bg-light {
+  --bs-bg-opacity: 1 !important;
+}
+.bord {
+  display: flex;
+  flex-wrap: wrap; /* Edited by Ezz - added to wrap the content of the form */
+  justify-content: center; /* Edited by Ezz - added to centralize the content of the form on the main axis*/
+  align-items: stretch; /* Edited by Ezz - added to centralize the content on the cross axis */
+  height: 100%; /* Edited by Ezz - added to give the maximum hight available */
+}
+.bord #message {
+  height: 210px;
+  resize: none;
+}
+.inbut {
+  outline: none;
+}
+.icon {
+  font-size: 50px;
+  width: 50px;
+}
+@media (max-width:900px){  /* Edited by Ezz - added media query so when the screen is at max width 900px the map fill the width of the card  */
+    iframe{
+        width: 100%;
+    }
+}
